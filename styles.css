@@ -1,0 +1,67 @@
+body{
+  background-image: url('giphy.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.player{
+  background-color: black;
+  height: 100px;
+  width: 25px;
+}
+.playerVert{
+  background-color: black;
+  height: 140px;
+  width: 40px;
+}
+.ball {
+  border-radius: 50%;
+  position: absolute;
+  right: 650px;
+  top: 200px;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  animation: spin 0.5s infinite linear;
+}
+
+#scoreBoard {
+  justify-content: space-around;
+  display: flex;
+  font-size: 80px;
+  color:white;
+  vertical-align: middle;
+}
+#player1 {
+  position: absolute;
+  right: 0px;
+  top: 500px;
+}
+
+#player2 {
+  position: absolute;
+  left: 0px;
+  top: 500px;
+}
+
+#player3 {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg);
+}
+
+#player4 {
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%) rotate(90deg);
+}
+
+@keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+}
